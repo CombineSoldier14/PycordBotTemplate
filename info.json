@@ -1,0 +1,10 @@
+{
+    "name":"Cool Bot",
+    "game":"Cool game",
+    "icon":"IconUrl",
+    "prefix":";",
+    "creator":"Creator",
+    "errorimg":"ErrorImgUrl",
+    "creatordm":"CreatorDmId"
+
+}
