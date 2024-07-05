@@ -10,8 +10,9 @@ import cogs.system
 
 
 
-#The Dev status is meant for if CombineBot is running in DEV mode which changes some names and icons.
-
+with open("dev.json", "r") as f:
+            _r = json.load(f)
+            dev_status = _r["DEV_STATUS"]
 
 if dev_status == "true":
             with open("devinfo.json", "r") as f:
