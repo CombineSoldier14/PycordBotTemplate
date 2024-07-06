@@ -56,9 +56,9 @@ async def on_application_command_error(interaction: discord.Interaction,
 
     embed.set_thumbnail(url=botinfo["errorimg"])
     try:
-        await interaction.response.send_message(embed=embed, view=ProblemView(traceback=error, bot=bot))
+        await interaction.response.send_message(embed=embed)
     except:
-        await interaction.followup.send(embed=embed, view=ProblemView(traceback=error, bot=bot))
+        await interaction.followup.send(embed=embed)
     raise error
 
 #CombineBot website button for /about
