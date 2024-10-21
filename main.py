@@ -16,14 +16,14 @@ with open("dev.json", "r") as f:
 
 if dev_status == "true":
             with open("devinfo.json", "r") as f:
-            _r = json.load(f)
-            botinfo = _r
+              _r = json.load(f)
+              botinfo = _r
 
 
 if dev_status == "false":
             with open("info.json", "r") as f:
-            _r = json.load(f)
-            botinfo = _r
+              _r = json.load(f)
+              botinfo = _r
 
 
 
