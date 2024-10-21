@@ -41,7 +41,8 @@ bot.load_extension('cogs.default')
 async def on_ready():
     bot.auto_sync_commands = True
     logging.info("Bot is ready!")
-    await bot.change_presence(activity=botinfo["game"])
+    real_activity = discord.Activity(type=discord.ActivityType.playing, activity=botinfo["game"])
+    await bot.change_presence(activity=real_activity)
     
 
 @bot.event
